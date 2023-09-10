@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game Engine</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="icon" href="styles/favicon.png">
+		<script src="SMPEngine/index.js" type="module" defer></script>
+	</head>
+	<body>
+		<canvas id="gameCanvas" width="700px" height="500px"></canvas>
+		<!-- The overlay container serves as a document that's render on top of the canvas. It's used for the buttons, labels, etc -->
+		<div id="overlay-container" width="700px" height="500px">
+			<!-- Start state labels -->
+			<input type="button" id="play" value="PLAY" onClick="toBeAssigned()">
+			<!-- Playing state labels -->
+			<div id="score" class="label">0</div>
+			<div id="time" class="label">000.00s</div>
+			<!-- Gameover state labels -->
+			<div id="game-over">GAME OVER</div>
+			<div id="best-score">BEST SCORE: 0</div>
+			<div id="best-time">BEST TIME: 0s</div>
+		</div>
+	</body>
+</html>
